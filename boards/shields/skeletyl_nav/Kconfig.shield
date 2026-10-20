@@ -1,0 +1,5 @@
+config SHIELD_SKELETYL_NAV_LEFT
+    def_bool $(shields_list_contains,skeletyl_nav_left)
+
+config SHIELD_SKELETYL_NAV_RIGHT
+    def_bool $(shields_list_contains,skeletyl_nav_right)

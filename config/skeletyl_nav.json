@@ -52,5 +52,7 @@
       ]
     }
   },
-  "sensors": []
+    "sensors": [
+    { "name": "right_encoder", "label": "Right encoder" }
+  ]
 }

@@ -25,6 +25,11 @@
                                      &kp SPACE  &kp TAB    &kp RET  &kp DELETE  &kp A
                 &kp A  &kp A  &kp A  &kp A  &kp A  
             >;
+
+            sensor-bindings =
+                <&mouse_scroll SCRL_UP SCRL_DOWN>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
         };
     };
 };

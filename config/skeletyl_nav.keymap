@@ -113,7 +113,7 @@
 &kp DOWN_ARROW  &kp RIGHT  &kp A           &kp LEFT     &kp UP_ARROW
             >;
 
-            sensor-bindings = <&encoder_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         nav {

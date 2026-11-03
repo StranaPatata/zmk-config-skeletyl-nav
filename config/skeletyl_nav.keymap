@@ -153,7 +153,7 @@
 &kp DOWN_ARROW  &morph_right_num  &kp A           &morph_left_nav  &morph_up_ext
             >;
 
-            sensor-bindings = <&mouse_scroll SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         nav {

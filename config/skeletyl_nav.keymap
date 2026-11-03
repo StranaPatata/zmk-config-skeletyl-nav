@@ -3,6 +3,7 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1100
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
 //#include <locale/keys_en_gb_extended.h>
 
@@ -74,7 +75,7 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
 
-            tap-ms = <60>;
+            tap-ms = <20>;
         };
 
         encoder_scroll: encoder_scroll {

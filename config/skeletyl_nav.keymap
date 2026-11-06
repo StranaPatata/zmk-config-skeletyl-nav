@@ -5,7 +5,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 2500
 
 // #define ZMK_MOUSE_DEFAULT_SCRL_VAL 300
-//#include <locale/keys_en_gb_extended.h>
+#include "keys_en_gb_extended.h"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -38,14 +38,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ANGULAR_BRACKET";
             #binding-cells = <0>;
-            bindings = <&kp GREATER_THAN>, <&kp LESS_THAN>;
+            bindings = <&kp GB_GT>, <&kp GB_LT>;
         };
 
         td_slash_quest_excl: td_slash_quest_excl {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SLASH_QUEST_EXCL";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp EXCL>, <&kp QUESTION>;
+            bindings = <&kp SLASH>, <&kp GB_EXCL>, <&kp QUESTION>;
         };
 
         td_left_par: td_left_par {
@@ -72,7 +72,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SLASH";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+            bindings = <&kp SLASH>, <&kp GB_BACKSLASH>;
         };
 
         mouse_scroll: sensor_scroll {
@@ -180,9 +180,9 @@
 
         num-sym {
             bindings = <
-&mt EXCL QUESTION  &kp APOS      &kp POUND     &kp DOLLAR     &kp PERCENT          &kp AMPS      &td_slash  &kp ASTERISK  &kp MINUS  &kp AT
+&mt EXCL QUESTION  &kp APOS      &kp GB_HASH   &kp DOLLAR     &kp PERCENT          &kp AMPS      &td_slash  &kp ASTERISK  &kp MINUS  &kp GB_AT
 &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5               &kp NUMBER_6  &kp N7     &kp N8        &kp N9     &kp N0
-&kp PIPE           &kp CARET     &td_left_par  &td_right_par  &td_angular_bracket  &kp GRAVE     &none      &kp PLUS      &kp EQUAL  &kp TILDE
+&kp GB_PIPE        &kp CARET     &td_left_par  &td_right_par  &td_angular_bracket  &kp GRAVE     &none      &kp PLUS      &kp EQUAL  &kp GB_TILDE
                                                &to 0          &trans               &trans        &trans     &trans
 &trans             &trans        &trans        &trans         &trans
             >;

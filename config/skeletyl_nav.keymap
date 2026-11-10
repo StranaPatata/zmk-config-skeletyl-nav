@@ -177,6 +177,7 @@
             key-positions = <30 33>;
             layers = <0>;
             require-prior-idle-ms = <100>;
+            timeout-ms = <100>;
         };
 
         to_sym {
@@ -184,7 +185,7 @@
             key-positions = <31 32>;
             layers = <0>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <65>;
+            timeout-ms = <100>;
         };
 
         to_ext {

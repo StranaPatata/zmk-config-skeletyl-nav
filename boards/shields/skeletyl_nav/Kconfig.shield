@@ -3,3 +3,6 @@ config SHIELD_SKELETYL_NAV_LEFT
 
 config SHIELD_SKELETYL_NAV_RIGHT
     def_bool $(shields_list_contains,skeletyl_nav_right)
+
+config SHIELD_SKELETYL_NAV_DONGLE
+    def_bool $(shields_list_contains,skeletyl_nav_dongle)

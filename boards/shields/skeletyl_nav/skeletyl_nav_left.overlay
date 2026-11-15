@@ -1,5 +1,11 @@
 #include "skeletyl_nav.dtsi"
 
+/ {
+    chosen {
+        zmk,kscan = &kscan;
+    };
+};
+
 &kscan {
     col-gpios
             = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // silkscreen 115 

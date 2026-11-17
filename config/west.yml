@@ -4,8 +4,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    # zmk locale
     - name: joelspadin
       url-base: https://github.com/joelspadin
+   # dongle screen
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -15,5 +19,8 @@ manifest:
     - name: zmk-locales
       remote: joelspadin
       revision: main
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: v0.3 # use 'v0.3' instead of 'main' if you use have pinned zmk to 'v0.3' or below, "main" for else
   self:
     path: config
